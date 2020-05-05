@@ -1,24 +1,21 @@
 import { createStackNavigator } from 'react-navigation-stack';
 import { createAppContainer } from 'react-navigation';
 import Home from '../screens/home';
-import BoardChoices from '../screens/boardchoices';
+import HandStrength from '../screens/handstrength';
 import GraphDisplay from '../screens/graphdisplay';
-import BoardRender from '../screens/boardrender';
 
 
 const screens = {
     Home: {
         screen: Home
     },
-    BoardChoices: {
-        screen: BoardChoices
+    HandStrength: {
+        screen: HandStrength
     },
     GraphDisplay: {
         screen: GraphDisplay
-    },
-    BoardRender: {
-        screen: BoardRender
     }
+
 }
 
 const HomeStack = createStackNavigator(screens);
